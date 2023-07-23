@@ -4,7 +4,36 @@
     font-family: 'roboto', sans-serif;
 }
 
+/* body{
+    position: relative;
+}
+.navbar {
+    position: fixed;
+} */
+
+.header {
+    height: 100vh;
+    background-image: url(./images/FreeVector-Desktop-Computer-Vector.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-fluid{
+    /* border: 2px solid black; */
+    border-radius: 150px 100px 150px 50px;
+    width: 80%;
+   
+}
+
 .card-img-top {
     width: 20vh;
     height: 20vh;
+}
+
+.about .desc {
+    padding: 2em;
+    border-left: solid 2px blue;
+    border-top: double 2px blue;
+    text-align: justify;
 }
