@@ -26,6 +26,7 @@ let full_name = first_name + " " + last_name;
 // String methods
 //length
 // console.log(full_name.length);
+
 //indexOf
 // let pos = full_name.indexOf("h")
 // console.log(pos);
