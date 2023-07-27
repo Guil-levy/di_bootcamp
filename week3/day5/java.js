@@ -33,10 +33,53 @@
     
 // }
 
-//While Loop
+// //While Loop
 
-let n = 0;
-while (n < 3) {
-    n++;
-    console.log(n);
-}
+// let n = 0;
+// while (n < 3) {
+//     n++;
+//     console.log(n);
+// }
+
+//DO WHILE LOOP
+
+// let username;
+
+// do {
+//     username = prompt("What is your username ?")
+   
+// } 
+//     while (username !== "guil");
+
+// THE BREAK KEYWORK
+
+// for (let i = 0; i < 10; i++) {
+//     if( i===3){continue;}
+//     else if ( i ===4){continue;}
+//     console.log(" the number is "+ i);
+// }
+
+// EXERCICE2
+
+// let names= ["john", "sarah", 23, "Rudolf",34];
+// for (let i = 0; i < names.length; i++) {
+//     if(typeof names[i] !== "string"){continue;}
+
+//     // if (typeof === String) {
+//     //     if(item.charAt(0) !== item.charAt(0).toUpperCase()){
+//     //         names[i] = item.charAt(0).toUpperCase()+item.slice(1);
+//     //         }
+//     //         console.log(names[i]);
+//     //     }
+//      if( names[i][0] !==names[i][0].toUpperCase()){
+//         names[i] = names[i][0].toUpperCase()+ names[i].slice(1);
+//      }   
+//      console.log(names[i]);
+//     }
+   
+// for(let i of names){
+//   if(typeof i !== "string"){
+//     break;
+//   }
+//   console.log(i);
+// }
