@@ -73,53 +73,62 @@
 
 // Exercice4
 
-const building = {
-    numberOfFloors: 4,
-    numberOfAptByFloor: {
-        firstFloor: 3,
-        secondFloor: 4,
-        thirdFloor: 9,
-        fourthFloor: 2,
-    },
-    nameOfTenants: ["Sarah", "Dan", "David"],
-    numberOfRoomsAndRent:  {
-        sarah: [3, 990],
-        dan:  [4, 1000],
-        david: [1, 500],
-    },
-}
+// const building = {
+//     numberOfFloors: 4,
+//     numberOfAptByFloor: {
+//         firstFloor: 3,
+//         secondFloor: 4,
+//         thirdFloor: 9,
+//         fourthFloor: 2,
+//     },
+//     nameOfTenants: ["Sarah", "Dan", "David"],
+//     numberOfRoomsAndRent:  {
+//         sarah: [3, 990],
+//         dan:  [4, 1000],
+//         david: [1, 500],
+//     },
+// }
 
-// 2/
-console.log(building.numberOfFloors);
-// 3/
-console.log(building.numberOfAptByFloor.firstFloor);
-console.log(building.numberOfAptByFloor.thirdFloor);
-// 4/
-console.log(building.nameOfTenants[1]);
-console.log(building.numberOfRoomsAndRent.dan[0]);
-// 5/
-const sarahRent = building.numberOfRoomsAndRent.sarah[1];
-const davidRent = building.numberOfRoomsAndRent.david[1];
-const danRent = building.numberOfRoomsAndRent.dan[1];
+// // 2/
+// console.log(building.numberOfFloors);
+// // 3/
+// console.log(building.numberOfAptByFloor.firstFloor);
+// console.log(building.numberOfAptByFloor.thirdFloor);
+// // 4/
+// console.log(building.nameOfTenants[1]);
+// console.log(building.numberOfRoomsAndRent.dan[0]);
+// // 5/
+// const sarahRent = building.numberOfRoomsAndRent.sarah[1];
+// const davidRent = building.numberOfRoomsAndRent.david[1];
+// const danRent = building.numberOfRoomsAndRent.dan[1];
 
-if (sarahRent + davidRent > danRent) {
-  building.numberOfRoomsAndRent.dan[1] = 1200;
-}
+// if (sarahRent + davidRent > danRent) {
+//   building.numberOfRoomsAndRent.dan[1] = 1200;
+// }
 
-console.log(building.numberOfRoomsAndRent);
+// console.log(building.numberOfRoomsAndRent);
 
-// Exercice5
+// // Exercice5
 
 
-// Exercice6
-const details = {
-    my: 'name',
-    is: 'Rudolf',
-    the: 'raindeer'
-  }
-  let sentence ;
-  for (){
-  }
+// // Exercice6
+// const details = {
+//     my: 'name',
+//     is: 'Rudolf',
+//     the: 'raindeer'
+//   }
+//   let sentence ;
+//   for (){
+//   }
 
-//   Exercice7
+// //   Exercice7
 const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+const firstLetters = [];
+for (let i = 0; i < names.length; i++) {
+    const firstLetter = names[i][0];
+    firstLetters.push(firstLetter);
+}
+firstLetters.sort();
+const societyName = firstLetters.join('')
+console.log(societyName);
+//  .sort / .join('')
