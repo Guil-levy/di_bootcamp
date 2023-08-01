@@ -131,4 +131,4 @@ for (let i = 0; i < names.length; i++) {
 firstLetters.sort();
 const societyName = firstLetters.join('')
 console.log(societyName);
-//  .sort / .join('')
+//  .sort / .join('')/ .push()
