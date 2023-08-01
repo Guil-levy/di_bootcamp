@@ -58,6 +58,7 @@ function compareNumbers(userNumber, computerNumber){
     for(i=0; i<chances; i++){
         if(userNumber==computerNumber){
             alert('Winner!')
+            playTheGame()
             return;
         }
         else if(i == chances -1){
