@@ -107,10 +107,23 @@
 
 // console.log(building.numberOfRoomsAndRent);
 
-// // Exercice5
+// // // Exercice5
 
+// const family = {
+//   father: 'Jeremie',
+//   mother: 'Nathalie',
+//   son: 'Jules',
+//   daughter: 'Camille'
+// };
+// for (let key in family) {
+//     console.log(key);
+//   }
+//   for (let key in family) {
+//     console.log(family[key]);
+//   }
+   
 
-// // Exercice6 *something wrong, i don't get the Keys,only the values
+// // // Exercice6 
 // const details = {
 //     my: 'name',
 //     is: 'Rudolf',
@@ -118,18 +131,18 @@
 //   }
 //   let sentence = '';
 //   for (let key in details) {
-//     sentence += details[key] + ' ';
+//     sentence += key + ' ' + details[key] + ' ';
 //   }
 //   console.log(sentence);
 
 
 // //   Exercice7
-// const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-// const firstLetters = [];
-// for (let i = 0; i < names.length; i++) {
-//     const firstLetter = names[i][0];
-//     firstLetters.push(firstLetter);
-// }
-// firstLetters.sort();
-// const societyName = firstLetters.join('')
-// console.log(societyName);
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+const firstLetters = [];
+for (let i = 0; i < names.length; i++) {
+    const firstLetter = names[i][0];
+    firstLetters.push(firstLetter);
+}
+firstLetters.sort();
+const societyName = firstLetters.join('')
+console.log(societyName);
