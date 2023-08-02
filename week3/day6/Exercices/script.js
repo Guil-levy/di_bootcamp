@@ -1,8 +1,8 @@
 // // Exercice1: List of people
 
-// const people = ["Greg", "Mary", "Devon", "James"];
+// var people = ["Greg", "Mary", "Devon", "James"];
 
-// people.shift('Greg');
+// people.shift();
 // console.log(people);
 
 // people.splice(2,1,'Jason');
@@ -29,25 +29,24 @@
 // //-1 because there is no Foo in the array.
 
 // // 7/
-// // const last = people.length - 1;
 
-// const lastIndex = people[people.length - 1];
-// const  last = people[lastIndex];
-
+// const last = people[people.length - 1];
 // console.log(last);
 
-// // PART II
-
+// // PART II ( *** I had to use a VAR to make it work..***)
+// var people = ["Greg", "James", "Mary", "Devon", "Yourname"];
 // for (let i = 0; i < people.length; i++) {
 //     console.log(people[i]);
-//   } // something is not working..........
+//   } 
 
 
 // // 2/
-// if (people[i] === "Devon"){
-//     break;
-// }
-  
+// for (let i = 0; i < people.length; i++) {
+//     console.log(people[i]);
+//     if (people[i] === "Devon") {
+//       break;
+//     }
+//   }
 
 // Exercice2
 
@@ -56,18 +55,18 @@
 //     console.log("My #" + (i + 1) + " choice is " + colors[i]);
 //   }
 
-// Exercice3
+// // Exercice3 // //not working
 // //  1/
-// let userInput;
-// do{
-//     userInput = prompt("Please choose a number :");
-// }
+// let userInput= prompt("Please choose a number :");
+//     const number = typeof userInput();
+//     console.log(number);
+
 // // typeof userInput();
 
-// do{
-//     userInput= prompt("Please choose a number :");
-// } while {typeof (userInput) < 10};
-// //not working
+
+//     // userInput= prompt("Please choose a number :");
+// // } while {typeof (userInput) < 10};
+
 
 
 
@@ -111,24 +110,26 @@
 // // Exercice5
 
 
-// // Exercice6
+// // Exercice6 *something wrong, i don't get the Keys,only the values
 // const details = {
 //     my: 'name',
 //     is: 'Rudolf',
 //     the: 'raindeer'
 //   }
-//   let sentence ;
-//   for (){
+//   let sentence = '';
+//   for (let key in details) {
+//     sentence += details[key] + ' ';
 //   }
+//   console.log(sentence);
+
 
 // //   Exercice7
-const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-const firstLetters = [];
-for (let i = 0; i < names.length; i++) {
-    const firstLetter = names[i][0];
-    firstLetters.push(firstLetter);
-}
-firstLetters.sort();
-const societyName = firstLetters.join('')
-console.log(societyName);
-//  .sort / .join('')/ .push()
+// const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// const firstLetters = [];
+// for (let i = 0; i < names.length; i++) {
+//     const firstLetter = names[i][0];
+//     firstLetters.push(firstLetter);
+// }
+// firstLetters.sort();
+// const societyName = firstLetters.join('')
+// console.log(societyName);
