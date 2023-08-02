@@ -16,8 +16,9 @@ console.log(indexOfBad);
 // 4/
 
 
-if( indexOfNot < indexOfBad ){
-    let sentence = "The movie is good, i like it."
+if( indexOfNot != -1 && indexOfBad != -1 && indexOfNot < indexOfBad ){
+    sentence = sentence.slice(0, indexOfNot) + 'good' + sentence.slice(indexOfBad + 3);
+    // let sentence = "The movie is good, i like it."
     console.log(sentence);
 }
 // 5/
