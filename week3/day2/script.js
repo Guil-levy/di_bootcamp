@@ -34,7 +34,7 @@
 // myWatchedSeries.push('South Park');
 // console.log(myWatchedSeries);
 
-// myWatchedSeries.shift('black mirror');
+// myWatchedSeries.shift();
 // console.log(myWatchedSeries);
 
 // const thirdLetter = myWatchedSeries[0][2];

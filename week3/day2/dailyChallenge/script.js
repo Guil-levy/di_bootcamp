@@ -1,6 +1,6 @@
 const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 
-fruits.shift('banana');
+fruits.shift();
 console.log(fruits);
 
 fruits.sort();
