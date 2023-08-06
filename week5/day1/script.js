@@ -55,8 +55,8 @@ Perform the following tasks:
 // header.removeChild(title);
 // console.log(title);
 
-const content = document.getElementById("content");
-const content_title = content.firstElementChild;
-const some_copy = content.firstElementChild.nextElementSibling;
-content.replaceChild(content_title, some_copy);
-console.log(some_copy);
+// const content = document.getElementById("content");
+// const content_title = content.firstElementChild;
+// const some_copy = content.firstElementChild.nextElementSibling;
+// content.replaceChild(content_title, some_copy);
+// console.log(some_copy);
