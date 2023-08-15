@@ -41,7 +41,7 @@ let numberOfBeers = getUserInput();
 let numberOfBeersToTakeAway = 1;
 
 function getUserInput(){
-    const answer = prompt("How many beers? from 10 to 100.");
+    const answer = prompt("How many beers?");
     if (answer == "") return alert(" Please enter something");
     const number = Number(answer);
     if (Number.isNaN(number)) return alert(" Please enter a number");
