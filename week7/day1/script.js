@@ -11,25 +11,34 @@
 // "We promptly judged antique ivory buckles for the prize"
 // x is missing
 
-function isPangram(sentence) {
-    const alphabet = new Set('abcdefghijklmnopqrstuvwxyz');
-    const sentenceLower = sentence.toLowerCase();
+// function isPangram(sentence) {
+//     const alphabet = new Set('abcdefghijklmnopqrstuvwxyz');
+//     const sentenceLower = sentence.toLowerCase();
 
-    for (const char of sentenceLower) {
-        if (/[a-z]/.test(char)) {
-            alphabet.delete(char);
-        }
+//     for (const char of sentenceLower) {
+//         if (/[a-z]/.test(char)) {
+//             alphabet.delete(char);
+//         }
+//     }
+
+//     return alphabet.size === 0;
+// }
+
+// // Test the function
+// const inputSentence = "The quick brown fox jumps over the lazy dog";
+// if (isPangram(inputSentence)) {
+//     console.log("It's a pangram!");
+// } else {
+//     console.log("It's not a pangram.");
+// }
+
+// console.log(isPangram(inputSentence));
+// ====================================
+function numbers() {
+    for (var i = 0; i < 5; i += 1) {
+      console.log(i);
     }
-
-    return alphabet.size === 0;
-}
-
-// Test the function
-const inputSentence = "The quick brown fox jumps over the lazy dog";
-if (isPangram(inputSentence)) {
-    console.log("It's a pangram!");
-} else {
-    console.log("It's not a pangram.");
-}
-
-console.log(isPangram(inputSentence));
+      console.log(i);
+  }
+  numbers();
+  
