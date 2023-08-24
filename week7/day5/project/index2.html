@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Filter and Navigation</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+  <div class="filter-form">
+    <form id="filter-author-form">
+      <label for="author-filter">Filter by Author:</label>
+      <input type="text" id="author-filter" required>
+      <button type="submit">Filter</button>
+    </form>
+  </div>
+
+  <div class="quote-box" id="quote-section">
+    <!-- The filtered quote will appear here -->
+  </div>
+
+  <div class="quote-navigation">
+    <button id="prev-quote">Previous</button>
+    <button id="next-quote">Next</button>
+  </div>
+  <div class="author-select">
+    <label for="author-select">Select an Author:</label>
+    <select id="author-select">
+      <option value="">All Authors</option>
+      <option value="Albert Einstein">Albert Einstein</option>
+      <option value="Steve Jobs">Steve Jobs</option>
+      <option value="Maya Angelou">Maya Angelou</option>
+      <option value="Mark Twain">Mark Twain</option>
+      <option value="Oscar Wilde">Oscar Wilde</option>
+    </select>
+  </div>
+    <script src="script2.js"></script>
+</body>
+</html>
