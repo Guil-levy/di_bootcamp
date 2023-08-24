@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quote generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Quotes</h1>
+    <h3>Motivation and inspiration</h3>
+
+        <!-- Quote box -->
+        <section class="quote-box" id="quote-section">
+            <span class="likes-count">Likes: 0</span>
+        </section>
+        
+        <!-- Quote Button -->
+        <div class="quote-button-wrapper">
+            <div class="quote-box" id="quote-section">
+            <button type="button" id="generate-button">Generate Quote</button>
+            </div>
+        </div>
+
+        <div class="add-quote-box">
+            <form id="add-quote-form">
+              <label for="quote-input">Quote:</label>
+              <input type="text" id="quote-input" required>
+              <label for="author-input">Author:</label>
+              <input type="text" id="author-input" required>
+              <button type="submit" id="add-quote-button">Add Quote</button>
+            </form>
+          </div>
+
+          <div class="quote-buttons">
+            <button id="char-count-button">Character Count (with space)</button>
+            <button id="char-count-no-space-button">Character Count (no space)</button>
+            <button id="word-count-button">Word Count</button>
+            <button id="like-button">Like</button>
+          </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>

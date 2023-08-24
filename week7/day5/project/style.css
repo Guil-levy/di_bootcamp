@@ -1,0 +1,91 @@
+ *{
+    background-color: powderblue;
+ }
+ 
+ h1{
+    text-align: center; 
+ }
+ h3{
+    text-align: center; 
+ }
+ .quote-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+ 
+ .quote-box {
+    background-color: #f1c40f; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: inline-block;
+  }
+  
+  .add-quote-box {
+    background-color: #3498db; 
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    width: fit-content; 
+    margin: 0 auto; 
+  }
+  
+  .form-container {
+    text-align: center; 
+    
+}
+  
+  #generate-button,
+  #add-quote-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  #generate-button:hover,
+  #add-quote-button:hover {
+    background-color: #1a689e; 
+    }
+  /* ------------------------ */
+  .quote-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #char-count-button,
+  #char-count-no-space-button,
+  #word-count-button,
+  #like-button {
+    background-color: #34495e; /* Dark gray color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 0 5px;
+  }
+  
+  #char-count-button:hover,
+  #char-count-no-space-button:hover,
+  #word-count-button:hover,
+  #like-button:hover {
+    background-color: #2c3e50; /* Slightly darker gray color on hover */
+  }
+  
+  .likes-count {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray; /* Green color for likes count */
+  }
