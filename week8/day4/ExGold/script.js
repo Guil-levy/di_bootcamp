@@ -27,27 +27,41 @@
 
 // Exercice3/
 
-class Counter {
-    constructor() {
-      this.count = 0;
-    }
+// class Counter {
+//     constructor() {
+//       this.count = 0;
+//     }
   
-    increment() {
-      this.count++;
+//     increment() {
+//       this.count++;
+//     }
+//   }
+  
+//   const counterOne = new Counter();
+//   counterOne.increment();
+//   counterOne.increment();
+  
+//   const counterTwo = counterOne;
+//   counterTwo.increment();
+  
+//   console.log(counterOne.count);// counterOne= 0+1+1. counterTwo= counterOne. counterTwo+1 : counterOne=3
+
+
+// Ex Ninja
+class Bird {
+    constructor() {
+      console.log("I'm a bird. 🦢");
     }
   }
   
-  const counterOne = new Counter();
-  counterOne.increment();
-  counterOne.increment();
+  class Flamingo extends Bird {
+    constructor() {
+      console.log("I'm pink. 🌸");
+      super();
+    }
+  }
   
-  const counterTwo = counterOne;
-  counterTwo.increment();
-  
-  console.log(counterOne.count);// counterOne= 0+1+1. counterTwo= counterOne. counterTwo+1 : counterOne=3
-  
-
-
+  const pet = new Flamingo();// I'm a bird. 🦢 I'm pink. 🌸, we call the extension of Bird, who is a child of Bird, so it will log both sentences
 
 
 
