@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Mini project</h1>
-
+    <form id="weatherForm">
+        <input type="text" id="location" placeholder="Enter city name">
+        <button type="submit" id="submit">Get Weather</button>
+    </form>
+    <div id="weatherCard" style="display: none;">
+        <h2 id="cityName"></h2>
+        <p id="countryName"></p>
+        <p id="weatherDescription"></p>
+        <img id="weatherIcon" src="" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <button id="convertToCelsius">Convert to Celsius</button>
+        <button id="convertToFahrenheit">Convert to Fahrenheit</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

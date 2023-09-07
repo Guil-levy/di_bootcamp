@@ -1,0 +1,23 @@
+body {
+    background-image: url('images/Z0qsiGu.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    
+}
+
+#weatherCard{
+    color: azure;
+    background-color: blueviolet;
+    width: 200px;
+    height: 500px;
+    padding: 10px;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
