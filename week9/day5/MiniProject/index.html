@@ -11,7 +11,9 @@
         <input type="text" id="location" placeholder="Enter city name">
         <button type="submit" id="submit">Get Weather</button>
     </form>
+
     <div id="weatherCard" style="display: none;">
+        <button class="close-button">X</button>
         <h2 id="cityName"></h2>
         <p id="countryName"></p>
         <p id="weatherDescription"></p>
@@ -21,6 +23,8 @@
         <button id="convertToCelsius">Convert to Celsius</button>
         <button id="convertToFahrenheit">Convert to Fahrenheit</button>
     </div>
+    <div id="weatherCardsContainer"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

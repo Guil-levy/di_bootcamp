@@ -1,23 +1,52 @@
 body {
-    background-image: url('images/Z0qsiGu.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    
+  background-image: url("images/Z0qsiGu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#weatherCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#weatherCard{
-    color: azure;
-    background-color: blueviolet;
-    width: 200px;
-    height: 500px;
-    padding: 10px;
-    box-sizing: border-box; 
-    overflow: hidden;
+.weather-card {
+  position: relative;
+  color: azure;
+  background-color: blueviolet;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10%;
+  border: solid black 4px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  z-index: 1;
+}
+
+.close-button:hover {
+  background-color: darkred;
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
+  body {
+    font-size: 14px;
+  }
 }
