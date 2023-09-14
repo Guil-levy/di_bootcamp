@@ -26,7 +26,7 @@ const compareToTen = (num) =>{
     { resolve (`${num} is greater than 10`)}
     }else{
     return reject(`${num} is less than 10`)
-        }    
+            
     });
 }
 
