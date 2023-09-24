@@ -4,12 +4,12 @@
     }
 
     addTask(task) {
-        this.tasks.push({ task, completed: false });
+        this.tasks.push({ task, completed: false });//FALSE
     }
 
     markTaskAsComplete(index) {
         if (index >= 0 && index < this.tasks.length) {
-            this.tasks[index].completed = true;
+            this.tasks[index].completed = true; //TRUE
         }
     }
 
