@@ -16,11 +16,11 @@
   }
  
  .quote-box {
-    background-color: #f1c40f; 
+    background-color: green; 
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 30px;
     display: inline-block;
   }
   
@@ -86,6 +86,6 @@
     display: block;
     text-align: center;
     margin-top: 10px;
-    font-size: 14px;
-    color: gray; /* Green color for likes count */
+    font-size: 20px;
+    color: black; /* Green color for likes count */
   }
