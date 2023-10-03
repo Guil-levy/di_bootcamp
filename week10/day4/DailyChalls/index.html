@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sunrise Times</h1>
+    <form id="sunriseForm">
+        <div>
+            <label for="city1Lat">City 1 Latitude:</label>
+            <input type="text" id="city1Lat" name="city1Lat" value="48.864716">
+        </div>
+        <div>
+            <label for="city1Lon">City 1 Longitude:</label>
+            <input type="text" id="city1Lon" name="city1Lon" value="2.349014">
+        </div>
+        <br>
+        <div>
+            <label for="city2Lat">City 2 Latitude:</label>
+            <input type="text" id="city2Lat" name="city2Lat" value="40.730610">
+        </div>
+        <div>
+            <label for="city2Lon">City 2 Longitude:</label>
+            <input type="text" id="city2Lon" name="city2Lon" value="-73.935242">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Get Sunrise Times</button>
+        </div>
+    </form>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
