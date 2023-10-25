@@ -1,7 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Car from "./components/Car"
-import CarAlso from "./components/CarAlso"
+
+import Counter from "./components/Counter"
+// const actors = [
+//   {
+//     firstName: "Tom",
+//     lastName: "Hanks",
+//     image: "https://example.com/tom-hanks.jpg"
+//   },
+//   {
+//     firstName: "Meryl",
+//     lastName: "Streep",
+//     image: "https://example.com/meryl-streep.jpg"
+//   },
+//   {
+//     firstName: "Brad",
+//     lastName: "Pitt",
+//     image: "https://example.com/brad-pitt.jpg"
+//   }
+// ];
 
 function App() {
   return (
@@ -11,15 +28,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Car />
-          <CarAlso />
-        </a>
+       
+          <Counter />
+        
       </header>
     </div>
   );
