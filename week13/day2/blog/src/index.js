@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Exercice1 from './Exercice1';
+import Exercice2 from './Exercice2';
+import UserFavoriteAnimals from './UserFavoriteAnimals';
+// const favoriteAnimals = ['Mangoost', 'Cat', 'Kangourous', 'Lion'];
+import Exercice from './Exercice3';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Exercice1 /> */}
+    {/* <Exercice2 />
+    <UserFavoriteAnimals favAnimals={favoriteAnimals}/> */}
+    <Exercice />
   </React.StrictMode>
 );
 
