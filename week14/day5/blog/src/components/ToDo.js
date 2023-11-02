@@ -40,6 +40,7 @@ class Todo extends Component {
             </li>
           ))}
         </ul>
+        <p>Add a new todo:</p>
         <input
           type="text"
           value={this.state.currentTask}
