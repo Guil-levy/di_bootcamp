@@ -7,6 +7,7 @@ class Todo extends Component {
       todos: [],
       currentTask: '',
     };
+    
   }
 
   renderToDos = (e) => {
@@ -40,7 +41,7 @@ class Todo extends Component {
             </li>
           ))}
         </ul>
-        <p>Add a new todo:</p>
+        <p>Add a new task:</p>
         <input
           type="text"
           value={this.state.currentTask}
