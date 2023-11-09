@@ -6,7 +6,7 @@ function Calculator () {
     const [result, setResult] = useState('');
  
     const handleAddition = () => {
-        const sum = (num1) + (num2);
+        const sum = parseFloat(num1) + parseFloat(num2);
         setResult(`Result: ${sum}`);
       };
     
