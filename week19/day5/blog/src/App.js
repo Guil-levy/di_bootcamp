@@ -5,7 +5,6 @@ import WeatherDisplay from "./Components/WeatherDisplay";
 function App() {
 
   const [finalSearch, setFinalSearch] = useState("");
-  // setCityName("Paris");
 
   console.log(finalSearch);
   return (
