@@ -72,20 +72,32 @@
 # print(sorted(our_favorite_numbers))
 
 #Exercice8
-basket = ["Banana", "Apples", "Oranges", "Blueberries"];
-
-basket.remove('Banana')
-basket.remove('Blueberries')
-
-basket.append('Kiwi')
-basket.insert(0, "Apples")
-
-apple_count =basket.count("Apples")
-print(apple_count)
-
-basket.clear()
-print(basket)
+# basket = ["Banana", "Apples", "Oranges", "Blueberries"];
+#
+# basket.remove('Banana')
+# basket.remove('Blueberries')
+#
+# basket.append('Kiwi')
+# basket.insert(0, "Apples")
+#
+# apple_count =basket.count("Apples")
+# print(apple_count)
+#
+# basket.clear()
+# print(basket)
 
 # Exercice 9:
 # 1/ a float is a decimal number, like 1.000. Integer is 1 or 2.
 # 2
+
+#Exercice 10:
+for num in range(1,21,1):
+    print(num)
+
+#2
+for num in range(0,21,2) :
+    print(num)
+
+# #Exercice11:
+# # 1
+#  if
