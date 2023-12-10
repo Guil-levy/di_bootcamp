@@ -4,42 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06dbf642-dc9d-4c67-a1b8-049601157638" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week19/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week19/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week19/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week19/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week19/day2/Matrix dailyChal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/.idea/day5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../week19/.idea/week19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week19/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day5/main.py" afterDir="false" />
+    <list default="true" id="78504289-6be4-4cb7-817c-dddd0598a696" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/day2/Matrix dailyChal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/.idea/day5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week18/day5/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../week18/day5/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2ZMcNyIosJiIVGjlSgrArkLo3I0" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ZRvd4i96t9SghacZwFUgLn92Wt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Run",
+    "Python.Matrix dailyChal.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -47,8 +48,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="week18" />
+    <configuration name="Matrix dailyChal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="week19" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,7 +61,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2/Matrix dailyChal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -71,7 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.Matrix dailyChal" />
       </list>
     </recent_temporary>
   </component>
@@ -85,11 +86,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06dbf642-dc9d-4c67-a1b8-049601157638" name="Changes" comment="" />
-      <created>1702235352622</created>
+      <changelist id="78504289-6be4-4cb7-817c-dddd0598a696" name="Changes" comment="" />
+      <created>1702397789974</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1702235352622</updated>
+      <updated>1702397789974</updated>
     </task>
     <servers />
   </component>

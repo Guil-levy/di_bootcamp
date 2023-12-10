@@ -91,13 +91,60 @@
 # 2
 
 #Exercice 10:
-for num in range(1,21,1):
-    print(num)
+# for num in range(1,21,1):
+#     print(num)
+#
+# #2
+# for num in range(0,21,2) :
+#     print(num)
 
-#2
-for num in range(0,21,2) :
-    print(num)
 
-# #Exercice11:
-# # 1
-#  if
+# Exercise 11 : Cinemax
+# 1/
+# price = 0
+# age = int(input('What is your age? : '))
+# def calculate_price_ticket(age) :
+#     if age<3:
+#         return 0
+#     elif 3<= age <=12:
+#         return 10
+#     else:
+#         return 15
+#
+# # price = price_ticket(age)
+#
+# # print(f'you need to pay : {price}$')
+# # 2/ Ask a family the age of each person who wants a ticket.
+# def main():
+#
+#     family_members = int(input("Enter the number of family members : "))
+#
+#     total_cost = 0
+#
+#     for members in range(family_members):
+#         age = int(input('Enter the age of the person?: '))
+#         ticket_price = calculate_price_ticket(age)
+#         total_cost = total_cost + ticket_price
+#     print(f"The total cost for the family is ${total_cost}")
+#
+# main()
+# 3/ Store the total cost of all the family’s tickets and print it out.
+
+# 4/
+def filter_teens(teenagers):
+    allowed_age_range = range(16, 22)
+    valid_teens = []
+
+    for teen in teenagers:
+        age = int(input(f"Enter the age of {teen}: "))
+        if age in allowed_age_range:
+            valid_teens.append(teen)
+
+    return valid_teens
+
+teenagers_list = ["John", "Foo", "Bar", "Baz"]
+
+valid_teens_list = filter_teens(teenagers_list)
+
+print("Final list of teenagers allowed to watch the movie:")
+print(valid_teens_list)
