@@ -1,4 +1,4 @@
-# 1/
+# 1/adfa
 user_string = str(input("Write a sentence : "))
 
 if len(user_string) < 10:
