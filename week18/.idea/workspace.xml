@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06dbf642-dc9d-4c67-a1b8-049601157638" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/day4/Day4_ex.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/Components/SearchBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/Components/WeatherDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week19/day5/blog/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +68,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Day4_ex.executor": "Run",
     "Python.daily_chal.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Asus/Desktop/di_bootcamp/week19"
+    "last_opened_file_path": "C:/Users/Asus/Desktop/di_bootcamp/week19/day5"
   }
 }]]></component>
   <component name="RunManager">
@@ -126,7 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702563928988</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <option name="closed" value="true" />
+      <created>1702563973356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702563973356</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1">
+      <option name="closed" value="true" />
+      <created>1702564039349</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702564039349</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
