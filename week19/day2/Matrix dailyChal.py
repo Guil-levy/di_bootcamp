@@ -24,3 +24,5 @@ for col_index in range(len(final_matrix[0])):
             final_result += " "
 
 print(final_result)
+import math
+math.e
