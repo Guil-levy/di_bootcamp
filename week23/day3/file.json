@@ -1,0 +1,23 @@
+response = requests.get("http://api.open-notify.org/astros.json")
+data = response.text
+print(response.request.url)
+print(response.request.body){
+
+  "children": [
+    {
+      "age": 6,
+      "firstName": "Alice"
+    },
+    {
+      "age": 8,
+      "firstName": "Bob"
+    }
+  ],
+  "firstName": "Jane",
+  "hobbies": [
+    "running",
+    "sky diving",
+    "singing"
+  ],
+  "lastName": "Doe"
+}
