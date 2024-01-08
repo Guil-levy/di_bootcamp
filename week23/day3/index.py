@@ -1,28 +1,19 @@
-from faker import Faker
+import pandas as pd 
 
-# Create a Faker instance
-fake = Faker()
+data = {
+    "Fruit": ["Apple", "Banana", None, "Date", "Grapes"],
+    "Quantity": [20, 30, 15, None, 25], 
+    "Price": [3, 2, 4, 5, None],
+    "Supplier": ["Supplier1", "Supplier2", "Supplier1", None, "Supplier1"]
+}
 
-# Generate a random name
-random_name = fake.name()
-print(f"Random Name: {random_name}")
+df_null = pd.DataFrame(data)
 
-# Generate a random address
-random_address = fake.address()
-print(f"Random Address: {random_address}")
+# Display the DataFrame
+print(df_null)
+print('\n','-' *20, '\n')
+print(df_null.isnull())
 
-# Generate a random email
-random_email = fake.email()
-print(f"Random Email: {random_email}")
-
-# Generate a random sentence
-random_sentence = fake.sentence()
-print(f"Random Sentence: {random_sentence}")
-
-# Generate a random date of birth
-random_dob = fake.date_of_birth(minimum_age=18, maximum_age=65)
-print(f"Random Date of Birth: {random_dob}")
-
-# Generate a random phone number
-random_phone = fake.phone_number()
-print(f"Random Phone Number: {random_phone}")
+df_dropped = df_null.dropna()
+print('\n','-' *20, '\n')
+print(df_dropped)
