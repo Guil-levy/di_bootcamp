@@ -1,0 +1,5 @@
+-> the downvotes are not provided in the db. "downs": 0,
+-> more graphs, more statics.
+->
+
+num comments/ num of likes -> the upvotes and the number of comments are not corralated
