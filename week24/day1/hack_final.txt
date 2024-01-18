@@ -1,5 +1,6 @@
 -> the downvotes are not provided in the db. "downs": 0,
 -> more graphs, more statics.
-->
-
+-> cripto post(about how they lost 2 banks) got the most down votes. it is a meme, but it s a more sensitive subject.
+-> also the last post, about President Biden, but the link is not working anymore( DB is not up to date)
+-> we don't have the number of visitors: visited : False.
 num comments/ num of likes -> the upvotes and the number of comments are not corralated
