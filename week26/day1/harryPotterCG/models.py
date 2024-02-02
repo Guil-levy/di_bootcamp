@@ -2,10 +2,10 @@ from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import gettext_lazy as _
-from .managers import UserManager
+from django.contrib.auth.models import UserManager
 import random
 
-
+# class User(models.Model):
 class User(AbstractUser):
     id = models.AutoField(primary_key=True)
     username = models.CharField(max_length=150, unique=True)
