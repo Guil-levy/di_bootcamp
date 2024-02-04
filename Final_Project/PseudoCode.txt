@@ -1,0 +1,90 @@
+#E-comerce for Bying games:
+	page 1. Store 
+	page 2. Library (My Games)
+			
+	page 3. Stats
+	page 4. User info
+	page 5. login/ create account
+	
+===================================================	
+**Store :		
+	-header:
+		p1,p2,p3,p4,p5
+		
+	
+	-list of games
+	states:
+		sort by name
+		sort by category
+		filter by ...
+	actions:
+		buy game (100) -->
+					     -->login page
+					   <--
+		buy game (100) -->					   
+					-->addging game to library(My games)
+					-->and remove credits/money
+					-->moving to page 2. Library (My Games)
+					-->updated stats		
+	footer:	
+		some details...
+===================================================
+**page 2. Library (My Games)	--> login page if not logged in
+	-header
+	-List of My Game
+	-button -> play -> popup ...
+===================================================
+**	page 3. Stats
+	-header
+	- Top 3 dowloaded games
+	- My top 3 games most played
+===================================================
+**	page 4. User info
+	-header
+	-Account details:
+		user name...
+		name...
+		tel..
+		email..
+	-Purchse history:
+		last 5 purchas
+	-Sign out
+------------------------------------------------	
+#Frontend 
+	Routes/ Components
+
+------------------------------------------------
+#Backend - [1st draft]
+	*** page 1. Store 
+		/get_all_games/<random 10 games. number of games>
+		/get_games_by_category/<random 10 games. number of games>,<category>
+		/buy_game/<game_id>
+		/create_account...
+
+	*** page 2. Library (My Games)	
+		/get_user_games/<id>
+		/play_game/<game_id>
+
+	*** page 4. User info
+		/get_user_info/<id>
+		/get_purches_history/<id>
+		/sign_out/<id>
+--------------------------------------------------------
+#Data structure
+	users:
+		name:
+		user_name:
+		pass:
+		id:
+		credits:
+	games:
+		name:
+		id:
+		price:
+		category:
+		image:
+		
+	users_games:
+		id,user_id , game_id
+	
+	
