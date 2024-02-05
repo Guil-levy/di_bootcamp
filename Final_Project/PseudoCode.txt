@@ -1,3 +1,6 @@
+background color : #202FB6
+file:///C:/Users/Asus/Desktop/di_bootcamp/Final_Project/Wix%20Logo%20Maker_files/preview-redirect
+
 #E-comerce for Bying games:
 	page 1. Store 
 	page 2. Library (My Games)
