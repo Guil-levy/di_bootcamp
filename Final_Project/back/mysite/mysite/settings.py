@@ -1,7 +1,9 @@
 
 from pathlib import Path
 import os
-import core
+# import core
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'gsteam')],
+        'DIRS': [os.path.join(BASE_DIR, 'gsteam')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,17 +79,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 DATABASES = {
-      'default':  {
-      'ENGINE': 'django.db.backends.postgresql',
-      "HOST" : "localhost",
-      "PORT" : '5433',
-      "USER":"postgres",
-      "PASSWORD" : '123',
-      "NAME" : 'games',
+    'default':  {
+        'ENGINE': 'django.db.backends.postgresql',
+        "HOST": "localhost",
+        "PORT": '5433',
+        "USER": "postgres",
+        "PASSWORD": '123',
+        "NAME": 'postgres',
     }
-
 }
-
 
 
 # Password validation
@@ -125,7 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'gsteam', 'static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'gsteam', 'static')]
+STATICFILES_DIRS = 'C:/Users/Asus/Desktop/di_bootcamp/Final_Project/back/mysite/User/static',
+
 CORS_ORIGIN_ALLOW_ALL = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
