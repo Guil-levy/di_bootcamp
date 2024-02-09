@@ -10,7 +10,7 @@ urlpatterns = [
     path("book/", book, name="book"),
     path('admin/', admin.site.urls),
     path('User/', include('djoser.urls')),
-    path('User/', include('djoser.urls.jwt'),),
+    path('User/', include('djoser.urls.jwt')),
     path('games/', include('Games.urls')),
 ]
 
