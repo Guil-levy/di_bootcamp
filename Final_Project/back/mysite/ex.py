@@ -1,17 +1,40 @@
 import os
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 import django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
+from django.contrib.auth import get_user_model
+
+# Configure Django settings
 django.setup()
-from Games.models import Game, Category
+from User.models import UserAccountManager
 
-category_action = Category.objects.create(name="Action")
-category_adventure = Category.objects.create(name="Adventure")
-category_rpg = Category.objects.create(name="RPG")
-category_strategy = Category.objects.create(name="Strategy")
-category_FPS = Category.objects.create(name="FPS")
-category_sports = Category.objects.create(name="sports")
-category_survival = Category.objects.create(name="survival")
+
+User = get_user_model()
+
+def create_user_manually():
+    user_manager = UserAccountManager()
+
+    # Create a new user manually
+    user = user_manager.create_user(
+        email='guil.levy1234@gmail.com',
+        name='Foo Bar',
+        user_name='Boo',
+        password='password123',
+    )
+
+    print("User created successfully:", user)
+
+
+create_user_manually()
+# ----------------------------
+
+# category_action = Category.objects.create(name="Action")
+# category_adventure = Category.objects.create(name="Adventure")
+# category_rpg = Category.objects.create(name="RPG")
+# category_strategy = Category.objects.create(name="Strategy")
+# category_FPS = Category.objects.create(name="FPS")
+# category_sports = Category.objects.create(name="sports")
+# category_survival = Category.objects.create(name="survival")
 
 
 # Display Games
