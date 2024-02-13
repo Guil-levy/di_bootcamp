@@ -1,0 +1,38 @@
+.footer {
+  /* padding-top: 10px; 
+  padding-bottom: 10px; 
+  margin-left: 20px; */
+  background-color: rgb(45, 40, 74) !important;
+  color: white; /* Set text color */
+}
+
+.footer h5 {
+  color: white; /* Dark text color for heading */
+}
+
+.footer ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px; /* Add spacing between list items */
+}
+
+.footer ul li a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footer ul li a:hover {
+  color: white;
+}
+
+.footer p {
+  margin-bottom: 5px; /* Add spacing between paragraphs */
+}
+
+.footer .text-muted {
+  color: white;
+}

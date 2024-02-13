@@ -1,0 +1,25 @@
+/* sidebar.css */
+
+.sidebar {
+  background-color: rgb(45, 40, 74); /* Set background color to blue */
+  position: fixed; /* Fix the position of the sidebar */
+  top: 1; /* Align the top of the sidebar with the top of the viewport */
+  left: 0; /* Align the left side of the sidebar with the left side of the viewport */
+  bottom: 1; /* Align the bottom of the sidebar with the bottom of the viewport */
+  width: 173px; /* Set the width of the sidebar */
+  height: 100px;
+  padding-top: 100px; /* Add some top padding */
+  padding-bottom: 20px; /* Add some bottom padding */
+  border-radius: 20px;
+  margin-left: 33px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none; /* Remove default list styles */
+  padding-left: 0; /* Remove default left padding */
+}
+
+.sidebar .nav-link {
+  color: white; /* Set text color to white */
+}

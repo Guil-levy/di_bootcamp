@@ -43,11 +43,12 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
-    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',  # Token authentication
+        'rest_framework.authentication.SessionAuthentication',  # Session-based authentication
+        'rest_framework.authentication.BasicAuthentication',  # Basic authentication (optional)
+    ],
 }
-
 SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
 }

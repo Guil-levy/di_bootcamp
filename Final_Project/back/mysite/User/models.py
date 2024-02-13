@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseU
 class UserAccountManager(BaseUserManager):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.model = UserAccount  # Set the model attribute to the UserAccount model
+        self.model = UserAccount 
 
     def create_user(self, email, name, user_name, password=None):
         if not email:
@@ -37,5 +37,4 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = 'email'
     objects = None
 
-# Now that UserAccountManager is defined, we can set the objects attribute of UserAccount
 UserAccount.objects = UserAccountManager()

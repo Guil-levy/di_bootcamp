@@ -1,31 +1,41 @@
+
 import os
-import django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
-
+import django
 from django.contrib.auth import get_user_model
-
-# Configure Django settings
 django.setup()
-from User.models import UserAccountManager
-
 
 User = get_user_model()
-
-def create_user_manually():
-    user_manager = UserAccountManager()
-
-    # Create a new user manually
-    user = user_manager.create_user(
-        email='guil.levy1234@gmail.com',
-        name='Foo Bar',
-        user_name='Boo',
-        password='password123',
-    )
-
-    print("User created successfully:", user)
+from Games.models import Game
 
 
-create_user_manually()
+
+# from User.models import UserAccountManager
+
+try:
+    game_to_delete = Game.objects.get(id=8)  # Replace 8 with the actual ID
+    game_to_delete.delete()
+    print("Game deleted successfully")
+except Game.DoesNotExist:
+    print("Game with ID 8 does not exist")  # Adjust the message accordingly
+except Exception as e:
+    print("An error occurred:", str(e))
+
+# def create_user_manually():
+#     user_manager = UserAccountManager()
+
+#     # Create a new user manually
+#     user = user_manager.create_user(
+#         email='guil.levy1234@gmail.com',
+#         name='Foo Bar',
+#         user_name='Boo',
+#         password='password123',
+#     )
+
+#     print("User created successfully:", user)
+
+
+# create_user_manually()
 # ----------------------------
 
 # category_action = Category.objects.create(name="Action")
@@ -37,8 +47,9 @@ create_user_manually()
 # category_survival = Category.objects.create(name="survival")
 
 
+
+
 # Display Games
-# Game.objects.all()
 
 # Game1----------------------------------
 # Baldur_Gate = Game.objects.create(name= "Baldur's Gate", price= 150.00, description= "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale", picture_url= "https://cdn.guidestash.com/wp-content/uploads/2020/10/02121353/Baldurs-Gate-3-Character-Elf-01.jpg")
@@ -76,3 +87,8 @@ create_user_manually()
 
 # EA_SPORTS_FIFA_23.categories.add(category_sports)
 # EA_SPORTS_FIFA_23.save()
+# Game8----------------------------------
+# Baldur_Gate = Game.objects.create(name= "Baldur's Gate", price= 150.00, description= "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale", picture_url= "https://cdn.guidestash.com/wp-content/uploads/2020/10/02121353/Baldurs-Gate-3-Character-Elf-01.jpg")
+
+# Baldur_Gate.categories.add(category_adventure, category_rpg, category_strategy)
+# Baldur_Gate.save()

@@ -1,50 +1,56 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
+import "./gameCard.css";
 
 const GameCard = ({ game }) => {
-    return (
-        <div className="card mb-3">
-            <div className="row g-0">
-                <div className="col-md-4">
-                    <img src={game.photo} className="img-fluid rounded-start" alt={game.name} />
-                </div>
-                <div className="col-md-8">
-                    <div className="card-body">
-                        <h5 className="card-title">{game.name}</h5>
-                        <p className="card-text" title={game.description}>{game.description}</p>
-                        <button className="btn btn-primary">${game.price}</button>
-                    </div>
-                </div>
-            </div>
+  const handleBuyGame = () => {
+    // Send a POST request to the backend to purchase the game
+    fetch('http://127.0.0.1:8000/UserGames/usergames/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        // Include any necessary authentication headers
+      },
+      body: JSON.stringify({ gameId: game.id }), // Send the game ID to the backend
+    })
+    .then(response => {
+      if (response.ok) {
+        // Game purchased successfully, you can handle this as needed (e.g., show a success message)
+      } else {
+        // Error purchasing the game, handle this as needed (e.g., show an error message)
+        console.error('Error purchasing game:', response.statusText);
+      }
+    })
+    .catch(error => {
+      // Handle any network errors
+      console.error('Network error:', error);
+    });
+  };
+
+  return (
+<div className='row mb-3'>
+      <div className='col'>
+        <div className='card'>
+        <img
+                src={game.picture_url}
+                className='img-fluid rounded-start card-img'
+                alt={game.name}/>
+                <h5 className='card-title'>{game.name}</h5>
+                <p className='card-text'>buy game</p>
+                <button className='btn btn-price' onClick={handleBuyGame}>${game.price} </button>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
+const GameCardComponent = ({ filteredGames }) => {
+  return (
+    <div className='GameCardList'>
+      {filteredGames.map((game) => (
+        <GameCard key={game.id} game={game} />
+      ))}
+    </div>
+  );
+};
 
-const GameCardList = () => {
-    const [games, setGames] = useState([]);
+export default GameCardComponent;
 
-    useEffect(() => {
-        const fetchGames = async () => {
-            try {
-                const response = await fetch('http://localhost:8000/games');
-                const data = await response.json();
-                setGames(data);
-            } catch (error) {
-                console.error('Error fetching games:', error);
-            }
-        };
-
-        fetchGames();
-    }, []);
-
-    return (
-        <div className="row row-cols-1 row-cols-md-2 g-4">
-            {games.map(game => (
-                <div key={game.id} className="col">
-                    <GameCard game={game} />
-                </div>
-            ))}
-        </div>
-    );
-}
-
-export default GameCardList;
