@@ -31,7 +31,7 @@ def login_view(request):
         user = authenticate(request, username= email, password=password)
         if user is not None:
             login(request, user)
-            return Response({'success': 'User logged in successfully'})
+            return Response({'success': 'User logged in successfully', "user_name" : username})
         else:
             return Response({'error': 'Invalid credentials'}, status=status.HTTP_400_BAD_REQUEST)
     else:
