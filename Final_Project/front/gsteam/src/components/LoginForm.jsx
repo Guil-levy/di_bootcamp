@@ -85,7 +85,7 @@ const LoginForm = ({ onLogin }) => {
     const handleLoginSubmit = async e => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:8000/User/', {
+            const response = await fetch('http://localhost:8000/User/login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -97,9 +97,8 @@ const LoginForm = ({ onLogin }) => {
                 // Store authentication token in local storage
                 localStorage.setItem('token', data.token);
                 // Notify parent component that login is successful
-                onLogin();
+                onLogin(data);
             } else {
-                // Handle login failure
                 console.error('Login failed:', data.error);
             }
         } catch (error) {

@@ -19,15 +19,16 @@ def register(request):
         user = User.objects.create_user(username=username, password=password, email=email)
         return Response({'success': 'User created successfully'}, status=status.HTTP_201_CREATED)
     else:
-        # Handle GET request
         return Response({'message': 'This endpoint supports only POST requests'}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 @api_view(['GET', 'POST'])
 def login_view(request):
     if request.method == 'POST':
-        username = request.data.get('username')
+        email = request.data.get('email')
         password = request.data.get('password')
-        user = authenticate(request, username=username, password=password)
+        username= email.split("@")[0]
+        print("IN LOGIN VIEW:,",email, password)
+        user = authenticate(request, username= email, password=password)
         if user is not None:
             login(request, user)
             return Response({'success': 'User logged in successfully'})

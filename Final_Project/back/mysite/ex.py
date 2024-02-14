@@ -1,4 +1,3 @@
-
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 import django
@@ -7,35 +6,32 @@ django.setup()
 
 User = get_user_model()
 from Games.models import Game
+from User.models import UserAccountManager
 
+# delete a game-------
+# try:
+#     game_to_delete = Game.objects.get(id=8)  # Replace 8 with the actual ID
+#     game_to_delete.delete()
+#     print("Game deleted successfully")
+# except Game.DoesNotExist:
+#     print("Game with ID 8 does not exist")  # Adjust the message accordingly
+# except Exception as e:
+#     print("An error occurred:", str(e))
 
+# create a user---------
+def create_user_manually():
+    user_manager = UserAccountManager()
 
-# from User.models import UserAccountManager
+    # Create a new user manually
+    user = user_manager.create_user(
+        email='a@gmail.com',
+        name='a',
+        user_name='b',
+        password='123',
+    )
 
-try:
-    game_to_delete = Game.objects.get(id=8)  # Replace 8 with the actual ID
-    game_to_delete.delete()
-    print("Game deleted successfully")
-except Game.DoesNotExist:
-    print("Game with ID 8 does not exist")  # Adjust the message accordingly
-except Exception as e:
-    print("An error occurred:", str(e))
-
-# def create_user_manually():
-#     user_manager = UserAccountManager()
-
-#     # Create a new user manually
-#     user = user_manager.create_user(
-#         email='guil.levy1234@gmail.com',
-#         name='Foo Bar',
-#         user_name='Boo',
-#         password='password123',
-#     )
-
-#     print("User created successfully:", user)
-
-
-# create_user_manually()
+    print("User created successfully:", user)
+create_user_manually()
 # ----------------------------
 
 # category_action = Category.objects.create(name="Action")
