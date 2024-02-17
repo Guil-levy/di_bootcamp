@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
-const Header = ({ isLoggedIn, user_name }) => {
+const Header = ({ isLoggedIn, user_name, handleLogout }) => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <div className='container'>
@@ -23,11 +23,14 @@ const Header = ({ isLoggedIn, user_name }) => {
             Profile
           </Link>
           {isLoggedIn ? (
-            <div className='d-flex align-items-center'>
-              <span className='me-3 text-white'>Welcome, {user_name}!</span>
-              <Link className='btn btn-outline-primary ms-3' to='/logout'>
+            <div className='d-flex '>
+              <span className='me-3 text-white'>Welcome, {user_name}</span>
+              <button
+                className='btn btn-outline-primary ms-3'
+                onClick={handleLogout}
+              >
                 Logout
-              </Link>
+              </button>
             </div>
           ) : (
             <Link className='btn btn-outline-primary' to='/login'>

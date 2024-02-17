@@ -11,6 +11,7 @@
   margin-bottom: 20px;
   margin-left: 250px;
   background: #2a5f87;
+  transition: transform 2s ease;
 }
 
 .card-body {
@@ -45,4 +46,7 @@
 .image-container img {
   width: 100%;
   height: auto;
+}
+.card:hover {
+  transform: scale(1.08);
 }

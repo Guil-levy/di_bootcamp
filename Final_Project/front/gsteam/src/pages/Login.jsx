@@ -9,6 +9,7 @@ const Login = () => {
 
     const handleLogin = (userData) => {
         if (userData && userData.user_name) {
+            localStorage.setItem('user_name', userData.user_name); 
             setIsLoggedIn(true);
             setUser_name(userData.user_name);
         } else {
