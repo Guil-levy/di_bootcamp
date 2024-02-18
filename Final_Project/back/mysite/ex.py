@@ -1,20 +1,19 @@
-
-from django.contrib.auth import get_user_model
 import django
 import os
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 django.setup()
-
+from django.contrib.auth import get_user_model
 User = get_user_model()
-from User.models import UserAccountManager
 from Games.models import Category, Game
+from User.models import UserAccountManager
 # delete a game-------
 # try:
-#     game_to_delete = Game.objects.get(id=8)  # Replace 8 with the actual ID
+#     game_to_delete = Game.objects.get(id=12)  # Replace 8 with the actual ID
 #     game_to_delete.delete()
 #     print("Game deleted successfully")
 # except Game.DoesNotExist:
-#     print("Game with ID 8 does not exist")  # Adjust the message accordingly
+#     print("Game with ID 12 does not exist")  # Adjust the message accordingly
 # except Exception as e:
 #     print("An error occurred:", str(e))
 
@@ -92,8 +91,36 @@ category_survival = Category.objects.create(name="survival")
 # Enshrouded.categories.add(category_survival)
 # Enshrouded.save()
 # Game9----------------------------------
-Cyberpunk_2077 = Game.objects.create(name="Cyberpunk 2077", price=219.00, description="Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.",
-                                     picture_url="https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1706698946")
+# Cyberpunk_2077 = Game.objects.create(name="Cyberpunk 2077", price=219.00, description="Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.",
+#                                      picture_url="https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1706698946")
 
-Cyberpunk_2077.categories.add(category_adventure, category_action)
-Cyberpunk_2077.save()
+# Cyberpunk_2077.categories.add(category_adventure, category_action)
+# Cyberpunk_2077.save()
+# # Game10----------------------------------
+# Counter_Strike_2 = Game.objects.create(name="Counter-Strike 2", price=00.00, description="For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2.",
+#                                      picture_url="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1698860631")
+
+# Counter_Strike_2.categories.add(category_FPS, category_action)
+# Counter_Strike_2.save()
+# print("Game created succesfully")
+# # Game11----------------------------------
+# TEKKEN_8 = Game.objects.create(name="TEKKEN 8", price=200.00, description="Get ready for the next chapter in the legendary fighting game franchise, TEKKEN 8.",
+#                                      picture_url="https://cdn.akamai.steamstatic.com/steam/apps/1778820/header_alt_assets_3.jpg?t=1707465369")
+
+# TEKKEN_8.categories.add(category_action)
+# TEKKEN_8.save()
+# print("Game created succesfully")
+# Game12----------------------------------
+# ELDEN_RING = Game.objects.create(name="ELDEN RING", price=220.00, description="THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+#                                      picture_url="https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1700164457")
+
+# ELDEN_RING.categories.add(category_rpg)
+# ELDEN_RING.save()
+# print("Game created succesfully")
+# Game13----------------------------------
+# ELDEN_RING = Game.objects.create(name="ELDEN RING", price=220.00, description="THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+#                                      picture_url="https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1700164457")
+
+# ELDEN_RING.categories.add(category_rpg)
+# ELDEN_RING.save()
+# print("Game created succesfully")
