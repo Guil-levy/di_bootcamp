@@ -28,12 +28,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "corsheaders",
+    # "corsheaders",
     'psycopg2',
     'djoser',
     'rest_framework',
     'rest_framework.authtoken',
-
+    "CustomAuth",
     'Games',
     'User',
     'UserGames',
@@ -41,12 +41,16 @@ INSTALLED_APPS = [
     'api',
     'core',
 ]
-
-REST_FRAMEWORK = {
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework.authentication.TokenAuthentication',  # Token authentication
+#  ],
+# }
+csrfREST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # Token authentication
+        # 'rest_framework.authentication.TokenAuthentication',  # Token authentication
         'rest_framework.authentication.SessionAuthentication',  # Session-based authentication
-        'rest_framework.authentication.BasicAuthentication',  # Basic authentication (optional)
+        # 'rest_framework.authentication.BasicAuthentication',  # Basic authentication (optional)
     ],
 }
 SIMPLE_JWT = {
@@ -168,9 +172,19 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'gsteam/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:3000',  # Add the origin of your frontend application
+# ]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
+
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOW_ALL_ORIGIN = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

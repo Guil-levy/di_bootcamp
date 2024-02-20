@@ -12,6 +12,7 @@ urlpatterns = [
     path('User/', include('User.urls')),  
     path('games/', include('Games.urls')),
     path('UserGames/', include('UserGames.urls')),
+    path('auth/', include('CustomAuth.urls')),
 ]
 
 urlpatterns += [

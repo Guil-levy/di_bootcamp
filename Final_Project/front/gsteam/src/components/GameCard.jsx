@@ -24,23 +24,30 @@ const GameCard = ({ game, isLoggedIn, addToMyGames }) => {
   };
   const handleBuyGame = async () => {
     if (!isLoggedIn) {
-      alert('You need to login to buy this game.');
+      alert("You need to login to buy this game.");
       return;
     }
-
+    console.log("in GameCard, message for Alex", game);
     try {
-      const response = await fetch("http://127.0.0.1:8000/UserGames/usergames/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Include any necessary authentication headers
-        },
-        body: JSON.stringify({ gameId: game.id }),
-      });
+      const csrftoken = getCookie('csrftoken');
+      // console.log("toKkKen", csrftoken);
+      const response = await fetch(
+        "http://localhost:8000/UserGames/purchase/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrftoken,
+            // Include any necessary authentication headers
+          },
+          body: JSON.stringify({ game_id: game.game_id }),
+          credentials: "include",
+        }
+      );
 
       if (response.ok) {
         addToMyGames(game);
-        alert('Game added to myGames.'); // Add game to MyGames page
+        alert("Game added to myGames."); // Add game to MyGames page
       } else {
         console.error("Error purchasing game:", response.statusText);
       }
@@ -48,7 +55,11 @@ const GameCard = ({ game, isLoggedIn, addToMyGames }) => {
       console.error("Network error:", error);
     }
   };
-
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
   return (
     <div className='row mb-3'>
       <div className='col'>
@@ -81,7 +92,12 @@ const GameCardComponent = ({ filteredGames, isLoggedIn, addToMyGames }) => {
   return (
     <div className='GameCardList'>
       {filteredGames.map((game) => (
-        <GameCard key={game.id} game={game} isLoggedIn={isLoggedIn} addToMyGames={addToMyGames} />
+        <GameCard
+          key={game.id}
+          game={game}
+          isLoggedIn={isLoggedIn}
+          addToMyGames={addToMyGames}
+        />
       ))}
     </div>
   );

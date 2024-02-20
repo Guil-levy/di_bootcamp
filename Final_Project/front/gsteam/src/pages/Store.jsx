@@ -1,13 +1,20 @@
-import React, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import GameCardComponent from "../components/GameCard";
 import Footer from "../components/Footer";
 import "./store.css";
 
-const Store = () => {
+const Store = ({ isLoggedIn }) => {
   const [filteredGames, setFilteredGames] = useState([]);
+  const [userGames, setUserGames] = useState([]); 
 
+  const addToMyGames = (game) => {
+    // Implement the logic to add the game to MyGames
+    console.log("Adding game to MyGames:", game);
+    setUserGames([...userGames, game]);
+  };
+  
   useEffect(() => {
     const fetchGames = async () => {
       try {
@@ -30,7 +37,11 @@ const Store = () => {
             <Sidebar setFilteredGames={setFilteredGames} />
           </div>
           <div>
-            <GameCardComponent filteredGames={filteredGames} />
+            <GameCardComponent
+              filteredGames={filteredGames}
+              isLoggedIn={isLoggedIn}
+              addToMyGames={addToMyGames}
+            />
           </div>
         </div>
       </div>

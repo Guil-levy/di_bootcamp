@@ -29,7 +29,7 @@ def login_view(request):
         password = request.data.get('password')
         # username= email.split("@")[0]
         # username= request.data.get("name")
-        # username = "HELO WORLD"
+        
         print("IN LOGIN VIEW:,", email, password)
         # user = authenticate(request, email=email, username= username, password=password)
         user = authenticate(request, username=email, password=password)

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Profil = () => {
+const Profil = (isLoggedIn={isLoggedIn}) => {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
