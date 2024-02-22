@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # "corsheaders",
+    "corsheaders",
     'psycopg2',
     'djoser',
     'rest_framework',

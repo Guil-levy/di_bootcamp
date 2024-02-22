@@ -149,7 +149,7 @@ function getCsrfToken() {
 }
 const LoginForm = ({ onLogin }) => {
   const [loginData, setLoginData] = useState({ email: "", password: "" });
-  const [signupData, setSignupData] = useState({ email: "", name: "", username: "", password: "" });
+  const [signupData, setSignupData] = useState({ email: "", name: "", user_name: "", password: "" });
 
   const handleLoginChange = (e) => {
     const { name, value } = e.target;
@@ -190,7 +190,9 @@ const LoginForm = ({ onLogin }) => {
     e.preventDefault();
     
     try {
-      const csrfToken = getCsrfToken(); 
+      console.log("Before the Csrf 1")
+      const csrfToken = getCsrfToken();
+      console.log("Login data 2:", signupData); 
       const response = await fetch('http://localhost:8000/User/register/', {
         method: 'POST',
         headers: {
@@ -200,7 +202,9 @@ const LoginForm = ({ onLogin }) => {
         body: JSON.stringify(signupData),
         credentials: "include",
       });
+      console.log("Login response 3:", response);
       const data = await response.json();
+      
       if (response.ok) {
         alert("Signup successfully");
       } else {
