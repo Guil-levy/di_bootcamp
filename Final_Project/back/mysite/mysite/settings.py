@@ -77,7 +77,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'gsteam')],
-        # 'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -166,10 +165,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-
+# --------STATICS
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'gsteam/static')]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# -
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'gsteam/public'),
+]
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = 'C:/Users/Asus/Desktop/di_bootcamp/Final_Project/back/mysite/User/static',
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'gsteam/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # CORS_ORIGIN_WHITELIST = [

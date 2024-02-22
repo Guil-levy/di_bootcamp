@@ -30,7 +30,6 @@ const GameCard = ({ game, isLoggedIn, addToMyGames }) => {
     console.log("in GameCard, message for Alex", game);
     try {
       const csrftoken = getCookie('csrftoken');
-      // console.log("toKkKen", csrftoken);
       const response = await fetch(
         "http://localhost:8000/UserGames/purchase/",
         {
@@ -79,9 +78,9 @@ const GameCard = ({ game, isLoggedIn, addToMyGames }) => {
               {game.description || "Loading description..."}
             </p>
           )}
-          <p className='card-text'>buy game</p>
+          <p className='card-text'>${game.price}</p>
           <button className='btn btn-price' onClick={handleBuyGame}>
-            ${game.price}{" "}
+          buy game{" "}
           </button>
         </div>
       </div>

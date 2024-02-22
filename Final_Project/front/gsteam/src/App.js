@@ -59,7 +59,7 @@ const App = () => {
           <Route path='/' element={<Store isLoggedIn={isLoggedIn} />} />
           <Route
             path='/mygames'
-            element={<MyGames isLoggedIn={isLoggedIn} />}
+            element={<MyGames isLoggedIn={isLoggedIn}/>}
           />
           <Route path='/statistics' element={<Statistics />} />
           <Route

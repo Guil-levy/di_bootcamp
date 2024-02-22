@@ -19,9 +19,16 @@ class UserGameDetailView(RetrieveAPIView):
 
 class PurchaseGameView(APIView):
     permission_classes = [IsAuthenticated] 
+    def get(self, request, *args, **kwargs):
+        print("Retrieve game GAMMMMMMMMMMMMME",request.user)
+        # Retrieve the list of games purchased by the current user
+        user_games = UserGame.objects.filter(user_id=request.user.id)  # Filter by user_id
+        serializer = UserGameSerializer(user_games, many=True)
+        return Response(serializer.data)
+    
     def post(self, request, *args, **kwargs):
         game_id = request.data.get('game_id')
-        print("Purchase", request.data, args)
+        # print("Purchase", request.data, args)
         if not game_id:
             return Response({'error': 'Game ID is required'}, status=status.HTTP_400_BAD_REQUEST)
 

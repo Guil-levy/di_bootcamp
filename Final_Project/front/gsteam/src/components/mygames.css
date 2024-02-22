@@ -1,0 +1,26 @@
+.list {
+  background-color: rgb(72, 72, 122);
+  display: flex; /* Use flexbox */
+  align-items: center; 
+  border: solid 2px black;
+}
+
+.image {
+  height: 100px;
+  width: 180px;
+  border: solid 1px black;
+}
+.infos{
+    flex-grow: 1; /* Expand to fill available space */
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-left: 30px;
+    color: beige;
+}
+.play {
+    background-color: rgb(155, 168, 216);
+    margin-right: 200px;
+    width: 60px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  font-size: 18px;
+  }

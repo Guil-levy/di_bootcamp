@@ -42,11 +42,11 @@ const Sidebar = ({ setFilteredGames }) => {
               placeholder='Search games...'
             />
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <a className='nav-link' href='#'>
               By Category
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
@@ -55,26 +55,19 @@ const Sidebar = ({ setFilteredGames }) => {
 
 export default Sidebar;
 
-
-
-
-
-// ---------------
+// --------------------------
 // import React, { useState, useEffect } from "react";
 // import "./sidebar.css";
-// import { GameCardList } from "./GameCard";
 
-// const Sidebar = ({ filteredGames, setFilteredGames }) => {
+// const Sidebar = ({ setFilteredGames }) => {
 //   const [games, setGames] = useState([]);
+//   const [categories, setCategories] = useState([]);
 //   const [searchQuery, setSearchQuery] = useState("");
 
 //   useEffect(() => {
 //     const fetchGames = async () => {
 //       try {
 //         const response = await fetch("http://127.0.0.1:8000/games/");
-//         if (!response.ok) {
-//           throw new Error("Failed to fetch games");
-//         }
 //         const data = await response.json();
 //         setGames(data);
 //       } catch (error) {
@@ -82,7 +75,18 @@ export default Sidebar;
 //       }
 //     };
 
+//     const fetchCategories = async () => {
+//       try {
+//         const response = await fetch("http://127.0.0.1:8000/categories/");
+//         const data = await response.json();
+//         setCategories(data);
+//       } catch (error) {
+//         console.error("Error fetching categories:", error);
+//       }
+//     };
+
 //     fetchGames();
+//     fetchCategories();
 //   }, []);
 
 //   // Function to handle changes to the search input
@@ -91,6 +95,14 @@ export default Sidebar;
 
 //     const filtered = games.filter((game) =>
 //       game.name.toLowerCase().includes(event.target.value.toLowerCase())
+//     );
+//     setFilteredGames(filtered);
+//   };
+
+//   // Function to filter games by category
+//   const handleCategoryClick = (categoryId) => {
+//     const filtered = games.filter((game) =>
+//       game.categories.includes(categoryId)
 //     );
 //     setFilteredGames(filtered);
 //   };
@@ -109,10 +121,20 @@ export default Sidebar;
 //             />
 //           </li>
 //           <li className='nav-item'>
-//             <a className='nav-link' href='#'>
-//               By Category
-//             </a>
+//             <span className='nav-link' onClick={() => handleCategoryClick(null)}>
+//               All Categories
+//             </span>
 //           </li>
+//           {categories.map((category) => (
+//             <li className='nav-item' key={category.id}>
+//               <span
+//                 className='nav-link'
+//                 onClick={() => handleCategoryClick(category.id)}
+//               >
+//                 {category.name}
+//               </span>
+//             </li>
+//           ))}
 //         </ul>
 //       </div>
 //     </nav>

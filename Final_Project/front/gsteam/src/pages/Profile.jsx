@@ -1,36 +1,52 @@
 import React, { useState, useEffect } from 'react';
+import "./profil.css"
 
-const Profil = (isLoggedIn={isLoggedIn}) => {
+const Profile = () => {
     const [user, setUser] = useState(null);
 
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(";").shift();
+    }
     useEffect(() => {
-        const fetchUser = async () => {
+        const fetchProfile = async () => {
             try {
-                const response = await fetch('http://localhost:8000/user/');
-                const userData = await response.json();
-                setUser(userData);
+                const csrftoken = getCookie("csrftoken");
+                if (csrftoken) {
+                    const response = await fetch('http://localhost:8000/User/profile/', {
+                        headers: {
+                            "Authorization": `Bearer ${csrftoken}`,
+                            "X-CSRFToken": csrftoken,
+                        },
+                        credentials: "include",
+                    });
+                    const userData = await response.json();
+                    setUser(userData);
+                    console.log("userDATA ???",userData)
+                }
             } catch (error) {
                 console.error('Error fetching user:', error);
             }
         };
 
-        fetchUser();
+        fetchProfile();
     }, []);
+    console.log("User state: AFTER FETCH", user); 
+        return (
+            <div>
+                <h1>Your Profile</h1>
+                {user && (
+                    <div>
+                        <p>Email: {user.email}</p>
+                        <p>Name: {user.name}</p>
+                        <p>Username: {user.user_name}</p>
+                        <p>Last Login: {user.last_login}</p>
+                    </div>
+                )}
+            </div>
+        );
+    }
 
-    return (
-        <div>
-            <h1>User Profile</h1>
-            {user && (
-                <div>
-                    <p>Email: {user.email}</p>
-                    <p>Name: {user.name}</p>
-                    <p>Username: {user.user_name}</p>
-                    <p>Date Joined: {user.date_joined}</p>
-                    <p>Last Login: {user.last_login}</p>
-                </div>
-            )}
-        </div>
-    );
-}
+export default Profile;
 
-export default Profil;
