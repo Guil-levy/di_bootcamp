@@ -7,7 +7,7 @@ const Header = ({ isLoggedIn, user_name, handleLogout }) => {
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <div className='container'>
         <div className='navbar-nav ms-auto'>
-          <Link className='navbar-brand' to='/'>
+          <Link className='navbar-brand' to='/Logo/preview-redirect.jpg'>
             GSteam
           </Link>
           <Link className='nav-link me-3' to='/'>

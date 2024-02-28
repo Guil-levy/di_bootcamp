@@ -19,7 +19,7 @@ const Sidebar = ({ setFilteredGames }) => {
     fetchGames();
   }, []);
 
-  // Function to handle changes to the search input
+  // search input
   const handleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
 

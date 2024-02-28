@@ -19,8 +19,9 @@
   margin-bottom: 5px; /* Add spacing between list items */
 }
 
+/* Link  */
 .footer ul li a {
-  color: white; /* Link text color */
+  color: white; 
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
@@ -30,7 +31,7 @@
 }
 
 .footer p {
-  margin-bottom: 5px; /* Add spacing between paragraphs */
+  margin-bottom: 5px; /*spacing between paragraphs */
 }
 
 .footer .text-muted {

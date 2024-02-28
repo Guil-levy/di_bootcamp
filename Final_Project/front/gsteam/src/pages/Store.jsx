@@ -10,7 +10,7 @@ const Store = ({ isLoggedIn }) => {
   const [userGames, setUserGames] = useState([]); 
 
   const addToMyGames = (game) => {
-    // Implement the logic to add the game to MyGames
+    // add the game to MyGames
     console.log("Adding game to MyGames:", game);
     setUserGames([...userGames, game]);
   };
